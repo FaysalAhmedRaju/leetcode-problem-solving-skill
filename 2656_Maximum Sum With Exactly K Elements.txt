@@ -1,0 +1,27 @@
+https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/
+
+2656. Maximum Sum With Exactly K Elements
+
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var maximizeSum = function(nums, k) {
+    //console.log(nums);
+   // console.log(Math.max(...nums));
+    let maxVal = Math.max(...nums);
+    let total = 0;
+    total = maxVal;
+    //console.log("array max value: " + maxVal);
+    for(let i = 1; i<k; i++){
+       // console.log("i="+i);
+        maxVal = maxVal + 1;
+       // console.log("test : " + maxVal);
+        total = total + maxVal;
+       //  console.log("test total : " + total);
+    }
+    return total;
+       // console.log("final : " + total);
+    
+};
