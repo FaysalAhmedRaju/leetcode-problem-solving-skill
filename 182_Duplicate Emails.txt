@@ -1,0 +1,7 @@
+https://leetcode.com/problems/duplicate-emails/
+
+182. Duplicate Emails   
+
+Problem: Database 
+
+select  email as Email from Person GROUP BY email HAVING COUNT( * ) > 1
